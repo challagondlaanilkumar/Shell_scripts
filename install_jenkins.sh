@@ -10,12 +10,7 @@ NAME=grep -E '^(NAME)=' /etc/os-release
 IFS="="
 set $NAME
 echo $2
-if [ expression ]
-then
- 
-else
-   Statement(s) to be executed if expression is not true
-fi
+
 if [ $USER_ID -ne 0 ]; then
 	echo  -e "$R You are not the root user, you dont have permissions to run this $N"
 	exit 1
